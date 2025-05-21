@@ -1,0 +1,29 @@
+{
+    "Log in": "Bejelentkezés",
+    "Log Out": "Kijelentkezés",
+    "Register": "Regisztráció",
+    "Email": "E-mail",
+    "Password": "Jelszó",
+    "Confirm Password": "Jelszó megerősítése",
+    "Forgot Password?": "Elfelejtette a jelszavát?",
+    "New Password": "Új jelszó",
+    "Remember me": "Emlékezz rám",
+    "Forgot your password?": "Elfelejtette a jelszavát?",
+    "Reset Password": "Jelszó visszaállítása",
+    "Already registered?": "Már regisztrált?",
+    "Profile": "Profilom",
+    "Dashboard": "Irányítópult",
+    "Profile Information": "Profil információ",
+    "Update Password": "Jelszó frissítése",
+    "Delete Account": "Fiók törlése",
+    "Save": "Mentés",
+    "Cancel": "Mégse",
+    "Update": "Frissítés",
+    
+
+    "Update your account's profile information and email address.": "Frissítse fiókjának profilinformációit és e-mail címét.",
+    "Ensure your account is using a long, random password to stay secure.": "Győződjön meg róla, hogy fiókja hosszú, véletlenszerű jelszót használ a biztonság érdekében.",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "Miután fiókját törölték, minden erőforrása és adata véglegesen törlésre kerül. Fiókjának törlése előtt kérjük, töltse le azokat az adatokat vagy információkat, amelyeket meg szeretne őrizni.",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Miután fiókját törölték, minden erőforrása és adata véglegesen törlésre kerül. Kérjük, írja be jelszavát, hogy megerősítse, hogy véglegesen törölni szeretné fiókját.",
+    "Are you sure you want to delete your account?": "Biztosan törölni szeretné a fiókját?"
+}
