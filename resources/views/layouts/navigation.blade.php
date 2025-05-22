@@ -3,7 +3,7 @@
     <!-- Sidebar -->
     <nav x-data="{ open: true }" class="bg-white dark:bg-gray-800 transition-all duration-200 flex flex-col min-h-screen" :class="open ? 'w-56' : 'w-16'">
         <!-- Logo & Toggle -->
-        <button @click="open = !open" class="flex items-center justify-center h-16 w-full focus:outline-none hover:bg-gray-50 relative">
+        <button @click="open = !open" class="flex items-center justify-center h-16 w-full focus:outline-none hover:bg-gray-50 dark:hover:bg-gray-900 relative">
             <x-application-logo class="block h-9 w-auto fill-current  dark:text-" />
             <span x-show="open" class="ml-3 font-bold text-lg  transition-all duration-200">{{ config('app.name', 'Laravel') }}</span>
             <svg x-show="open" class="absolute right-4 h-5 w-5 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
