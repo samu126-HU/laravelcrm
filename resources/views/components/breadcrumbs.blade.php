@@ -23,7 +23,7 @@ $normalizedItems = array_map(function($item) {
                         {{ __($item['label']) }}
                     </a>
                 @else
-                    <span style="color: #6c757d;">{{ __($item['label']) }}</span>
+                    <span class="text-gray-800 dark:text-gray-100">{{ __($item['label']) }}</span>
                 @endif
                 @if ($index !== count($normalizedItems) - 1)
                     <span style="margin: 0 8px;">/</span>

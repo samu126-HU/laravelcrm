@@ -10,6 +10,16 @@
         </h2>
     </x-slot>
 
+     <x-slot name="breadcrumbs">
+        <x-breadcrumbs :items="
+            [
+                ['Dashboard' => '/'],
+                ['Dashboard' => '/']
+            ]
+            "
+             />
+     </x-slot>
+
     <div class="rounded-md bg-gray-800">
             <div class="overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 ">
