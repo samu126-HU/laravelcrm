@@ -28,7 +28,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('Dashboard') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('customers')" :active="request()->routeIs('customers')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"

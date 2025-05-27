@@ -17,6 +17,12 @@ export default {
         },
     },
 
+    safelist: [
+        {
+            pattern: /grid-cols-(\d+)/,
+        },
+    ],
+
     darkMode: 'selector',
 
     plugins: [forms],

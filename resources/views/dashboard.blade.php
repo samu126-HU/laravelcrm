@@ -51,7 +51,6 @@
                             <x-primary-button class="w-1/2 flex justify-center items-center lg:py-5" style="opacity: 0.90;">
                                 Munkatársak
                             </x-primary-button>
-
                         </div>
                     </div>
                 </div>
