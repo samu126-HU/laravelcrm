@@ -32,7 +32,19 @@
     "Employees": "Alkalmazottak",
     "Permissions": "Engedélyek",
     "Currencies": "Valuták",
+    "Delete": "Törlés",
+    "Projects (price offers)": "Projektek (árajánlatok)",
+    "Details": "Részletek",
+    "Failed Projects": "Sikertelen projektek",
+    "Successful Projects": "Sikeres projektek",
+    "Current Projects": "Aktuális projektek",
+    "Contact person": "Ügyfél-Kapcsolattartó",
+    "Deadline": "Határidő",
+    "Group": "Csoport",
 
+    "This record is referenced by a foreign key in another table.": "Ez a rekord egy másik táblában idegen kulcsként hivatkozva van.",
+    "Warning: Actions require the \"id\" column to be displayed.": "Figyelem: A műveletek megjelenítéséhez szükséges az \"id\" oszlop megjelenítése.",
+    "Warning: The number of columns in \"order\" does not match the number of columns in \"headerString\".": "Figyelem: Az \"order\" elemek száma nem egyezik meg a \"headerString\" elemek számával.",
     "Update Record in": "Rekord frissítése itt:",
     "Click to copy.": "Kattintson a másoláshoz.",
     "No data found in the table.": "Nincs adat a táblázatban.",
@@ -41,6 +53,10 @@
     "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "Miután fiókját törölték, minden erőforrása és adata véglegesen törlésre kerül. Fiókjának törlése előtt kérjük, töltse le azokat az adatokat vagy információkat, amelyeket meg szeretne őrizni.",
     "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Miután fiókját törölték, minden erőforrása és adata véglegesen törlésre kerül. Kérjük, írja be jelszavát, hogy megerősítse, hogy véglegesen törölni szeretné fiókját.",
     "Are you sure you want to delete your account?": "Biztosan törölni szeretné a fiókját?",
-    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "Elfelejtette a jelszavát? Nincs probléma. Csak tudassa velünk e-mail címét, és küldünk Önnek egy jelszó-visszaállító linket, amely lehetővé teszi, hogy válasszon egy újat."
-    
+    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "Elfelejtette a jelszavát? Nincs probléma. Csak tudassa velünk e-mail címét, és küldünk Önnek egy jelszó-visszaállító linket, amely lehetővé teszi, hogy válasszon egy újat.",
+    "Record not found.": "Rekord nem található.",
+    "Table does not exist.": "A tábla nem létezik.",
+    "Record updated successfully.": "A rekord sikeresen frissítve.",
+    "Record deleted successfully.": "A rekord sikeresen törölve.",
+    "Failed to delete record.": "A rekord törlése nem sikerült."
 }

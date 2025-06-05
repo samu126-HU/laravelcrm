@@ -1,3 +1,10 @@
+{{-- 
+Usage example:
+    <x-db-to-table tableName="users" headerString="ID, Name, Email" exclude="email_verified_at, password, 
+remember_token, created_at, updated_at, role_id, avatar">
+
+We always have to pass all attributes even if they are not used for safety reasons and ease of editing.
+--}}
 @php
     use Illuminate\Support\Facades\DB;
 
@@ -37,15 +44,13 @@
         {{ __('No data found in the table.') }}
     </div>
 @else
-    <div
-        class="m-6 grid bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden"
-        style="grid-template-columns: {{ count($headerNames) ? 'repeat(' . count($headerNames) . ', minmax(0, 1fr))' : '' }}{{ $showActions ? ' max-content' : '' }};"
-    >
+    <div class="m-6 grid bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden"
+        style="grid-template-columns: {{ count($headerNames) ? 'repeat(' . count($headerNames) . ', minmax(0, 1fr))' : '' }}{{ $showActions || trim($slot ?? '') !== '' ? ' max-content' : '' }};">
         <!-- Header Row -->
         @foreach ($headerNames as $headerName)
             <div class="p-3">{{ __($headerName) }}</div>
         @endforeach
-        @if ($showActions)
+        @if ($showActions || trim($slot ?? '') !== '')
             <div class="p-3 max-w-fit">{{ __('Actions') }}</div>
         @endif
 
@@ -58,12 +63,15 @@
                     {{ $value }}
                 </div>
             @endforeach
-            @if ($showActions)
-                <div class="p-3 flex gap-4 overflow-clip cursor-pointer max-w-fit {{ $rowIndex % 2 === 0 ? 'bg-white dark:bg-gray-500' : 'bg-gray-50 dark:bg-gray-600' }}">
+            @if ($showActions || trim($slot ?? '') !== '')
+                <div
+                    class="p-3 grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-fit {{ $rowIndex % 2 === 0 ? 'bg-white dark:bg-gray-500' : 'bg-gray-50 dark:bg-gray-600' }}">
                     @if ($enableUpdate && isset($row['id']))
                         <form method="GET"
                             action="{{ route('data.edit', ['table' => $tableName, 'id' => $row['id'], 'view' => Route::currentRouteName()]) }}">
-                            <button type="submit" class="bg-indigo-700 hover:bg-indigo-500 p-2 rounded-md">{{ __('Update') }}</button>
+                            <button type="submit"
+                                class="bg-indigo-700 hover:bg-indigo-500 p-2 rounded-md w-full">{{ __('Update') }}
+                            </button>
                         </form>
                     @endif
                     @if ($enableDelete && isset($row['id']))
@@ -72,9 +80,13 @@
                             onsubmit="return confirm('{{ __('Are you sure?') }}')">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="bg-red-700 hover:bg-red-500 p-2 rounded-md">{{ __('Delete') }}</button>
+                            <button type="submit"
+                                class="bg-red-700 hover:bg-red-500 p-2 rounded-md w-full">{{ __('Delete') }}
+                            </button>
                         </form>
                     @endif
+
+                    {!! trim($slot ?? '') !!}
                 </div>
             @endif
         @endforeach

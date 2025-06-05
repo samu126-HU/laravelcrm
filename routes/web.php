@@ -21,6 +21,36 @@ Route::middleware('auth')->group(function () {
     Route::get('/customers', function () {
         return view('pages.customers');
     })->name('customers');
+    Route::get('/permissions', function () {
+        return view('pages.permissions');
+    })->name('permissions');
+    Route::get('/mytasks', function () {
+        return view('pages.mytasks');
+    })->name('mytasks');
+    Route::get('/myprojects', function () {
+        return view('pages.myprojects');
+    })->name('myprojects');
+    Route::get('/groups', function () {
+        return view('pages.groups');
+    })->name('groups');
+    Route::get('/employees', function () {
+        return view('pages.employees');
+    })->name('employees');
+    Route::get('/customergroups', function () {
+        return view('pages.customergroups');
+    })->name('customergroups');
+    Route::get('/customercontacts', function () {
+        return view('pages.customercontacts');
+    })->name('customercontacts');
+    Route::get('/currencies', function () {
+        return view('pages.currencies');
+    })->name('currencies');
+    Route::get('/contacts', function () {
+        return view('pages.contacts');
+    })->name('contacts');
+    Route::get('/campaigns', function () {
+        return view('pages.campaigns');
+    })->name('campaigns');
 });
 
 require __DIR__.'/auth.php';

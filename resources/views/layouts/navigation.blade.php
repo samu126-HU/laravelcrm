@@ -40,7 +40,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('Customers') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('myprojects')" :active="request()->routeIs('myprojects')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -52,7 +52,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('My Projects') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('mytasks')" :active="request()->routeIs('mytasks')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -64,7 +64,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('My Tasks') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('contacts')" :active="request()->routeIs('contacts')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -76,7 +76,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('Contacts') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('customercontacts')" :active="request()->routeIs('customercontacts')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -88,19 +88,7 @@
                     <span x-show="open" class="ml-3 flex items-center">{{ __('Customer Contacts') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
-                <div class="flex items-center px-3 w-full h-full">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                        viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                            d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
-                    </svg>
-
-                    <span x-show="open" class="ml-3 flex items-center">{{ __('Groups') }}</span>
-                </div>
-            </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('groups')" :active="request()->routeIs('groups')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -112,10 +100,10 @@
                     </svg>
 
 
-                    <span x-show="open" class="ml-3 flex items-center">{{ __('Customer Groups') }}</span>
+                    <span x-show="open" class="ml-3 flex items-center">{{ __('Groups') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('customergroups')" :active="request()->routeIs('customergroups')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 text-gray-800 dark:text-white">
@@ -124,10 +112,10 @@
                     </svg>
 
 
-                    <span x-show="open" class="ml-3 flex items-center">{{ __('Campaigns') }}</span>
+                    <span x-show="open" class="ml-3 flex items-center">{{ __('Customer Groups') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('campaigns')" :active="request()->routeIs('campaigns')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 text-gray-800 dark:text-white">
@@ -135,10 +123,10 @@
                             d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
 
-                    <span x-show="open" class="ml-3 flex items-center">{{ __('Employees') }}</span>
+                    <span x-show="open" class="ml-3 flex items-center">{{ __('Campaigns') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('employees')" :active="request()->routeIs('employees')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -147,16 +135,28 @@
                             d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z" />
                     </svg>
 
-                    <span x-show="open" class="ml-3 flex items-center">{{ __('Permissions') }}</span>
+                    <span x-show="open" class="ml-3 flex items-center">{{ __('Employees') }}</span>
                 </div>
             </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="flex items-center justify-center w-full h-12">
+            <x-nav-link :href="route('permissions')" :active="request()->routeIs('permissions')" class="flex items-center justify-center w-full h-12">
                 <div class="flex items-center px-3 w-full h-full">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                         viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2" />
+                    </svg>
+
+                    <span x-show="open" class="ml-3 flex items-center">{{ __('Permissions') }}</span>
+                </div>
+            </x-nav-link>
+            <x-nav-link :href="route('currencies')" :active="request()->routeIs('currencies')" class="flex items-center justify-center w-full h-12">
+                <div class="flex items-center px-3 w-full h-full">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
                     </svg>
 
                     <span x-show="open" class="ml-3 flex items-center">{{ __('Currencies') }}</span>
